@@ -11,3 +11,9 @@ build/*
 # system ignore
 .DS_Store
 Thumbs.db
+
+dizo/
+hanjiang/
+VsStudio/
+.vscode/
+.idea/

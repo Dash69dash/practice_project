@@ -1,0 +1,27 @@
+PerfSummary:  # PerfSummary tab
+  summary_flow:
+    type: header
+    title: ''
+  summary_flow_t:  # First table in PerfSummary tab
+    type: vertical_table
+    indicators:
+      - pi: design.name
+        title: Design
+      - pi: session.tool_list
+        title: Tools
+      - pi: design.instances.logical
+        title: Insts
+        link_table: physical_physical
+
+Clock:  # Clock tab
+  clock_phys:
+    type: header
+    title: Physical
+  clock_phys_t:
+    type: table
+    per_checkpoint: true
+    indicators:
+      - pi: clock.instances.total
+        title: '#Total'
+        group: Instances
+      # ...其他指标配置
